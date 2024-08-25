@@ -1,0 +1,40 @@
+---
+title: "Información - Nobel SMMUN 2025"
+layout: "base.njk"
+---
+
+<section class="que-laureado">
+    <h2>
+        ¿Qué lauread@ del Nobel de la Paz eres?
+    </h2>
+</section>
+
+<section class="cuestionario">
+    <article class="pregunta">
+        <h3>
+            <span id="antes-de">Antes de comenzar...</span>
+            <br>
+            Cuéntanos un poco sobre tí
+        </h3>
+        <form method="post">
+            <label for="nombre">Nombre(s) *</label>
+            <input autocomplete="off" name="nombre" type="text" required>
+
+            <label for="apellidos">Apellidos *</label>
+            <input autocomplete="off" name="apellidos" type="text" required>
+
+            <label for="email">Correo electrónico *</label>
+            <input autocomplete="off" name="email" type="email" required>
+
+            <label for="phone">Número de teléfono *</label>
+            <input autocomplete="off" name="phone" type="tel" maxlength="12" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </article>
+    <aside class="imagen">
+        <figure>
+            <img src="/assets/img/test/aside.webp" alt="" width="1269" height="1269">
+        </figure>
+    </aside>
+</section>
