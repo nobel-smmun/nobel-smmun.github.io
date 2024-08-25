@@ -1,0 +1,4 @@
+Sitemap: https://nobel-smmun.github.io/sitemap.xml
+
+User-agent: *
+Disallow: /
