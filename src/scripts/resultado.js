@@ -73,8 +73,8 @@ default:
 }
 
 // Send results email
-/*emailjs.init({
-    publicKey: "",
+emailjs.init({
+    publicKey: "EJPykG9CS0QqODJG3",
 });
 
 emailjs.send("service_n4emy45", "template_ukq7hwc", {
@@ -82,7 +82,7 @@ emailjs.send("service_n4emy45", "template_ukq7hwc", {
     l_name: l_name.innerHTML,
     l_text: l_text.innerHTML,
     l_img: `https://nobel-smmun.github.io/email/${ganador}.png`,
-});*/
+});
 
 // Delete all cookies to reset
 document.cookie.split(';').forEach(cookie_untrimmed => {
