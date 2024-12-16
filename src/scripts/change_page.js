@@ -13,14 +13,16 @@ function handleChange()
             values[this.name] = $(this).val();
         });
 
-        // Send email with data
-        /*Email.send({
-            SecureToken: "",
-            To: "",
-            From: "",
-            Subject: `NOBEL: ${values["nombre"]}`,
-            Body: `Nombre: ${values["nombre"]}<br>Apellidos: ${values["apellidos"]}<br>Email: ${values["email"]}<br>Tel: ${values["phone"]}`
-        });*/
+        emailjs.init({
+            publicKey: "EJPykG9CS0QqODJG3",
+        });
+        
+        emailjs.send("service_n4emy45", "template_4jmotir", {
+            nombre: values["nombre"],
+            apellidos: values["apellidos"],
+            email: values["email"],
+            celular: values["phone"]
+        });
 
         // Store email in cookies
         document.cookie = `email=${values["email"]}; max-age=86400; Path=/;`;
